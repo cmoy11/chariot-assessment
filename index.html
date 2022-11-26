@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/chariotc.png">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Chariot Assessment</title>
+</head>
+<body>
+    <button type="button" id="open">Donate with Chariot</button>
+    <div id="modal">
+        <div class="modal-content">
+            <div class="nav">
+                <img src="images/back.png" alt="go back button">
+                <img src="images/chariot.png" alt="Chariot logo">
+                <img id="cancel" src="images/cancel.png" alt="cancel button">
+            </div>
+
+            <div class="main-content">
+                <div class="error-info">
+                    <img id="error-image" src="images/error.png" alt="error image">
+                    <h1>Your provider is currently unsupported</h1>
+                </div>
+
+                <h2>Ask your provider to make a grant to:</h2>
+                <div class="nonprofit-info">
+                    <div class="grid-container">
+                        <p>Nonprofit Organization Name</p>
+                        <p class="ein-p">EIN: <input type="text" value="12-3456789" id="ein" class="text-input"></p>
+                        <button id="copy">Copy</button>
+                    </div>
+
+                    <div class="address-container">
+                        <p class="weak"><strong>Address:</strong> 123 Sesame Street New York, NY 12345</p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="continue">
+                <div class="checkbox-div">
+                    <input type="checkbox" checked="checked" id="provider">
+                    <label for="provider" class="provider-label"> I would like my DAF provider to integrate with Chariot</label>
+                </div>
+                
+                <div class="provider">
+                    <h3>Continue to my provider</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chariot.js"></script>
+</body>
+</html>
